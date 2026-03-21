@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><b>Isha</b></div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="nav-links" id="menu">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-text">
+            <h1>I am Isha <span>Duwal</span></h1>
+            <p>BCA student from Nepal focused on learning web development and building practical projects.</p>
+            <button class="btn" onclick="location.href='#projects'">View Projects</button>
+        </div>
+
+        <div class="hero-img">
+            <img src="WhatsApp Image 2026-03-21 at 11.04.53 PM.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a BCA student from Nepal who loves exploring new technologies and solving problems through coding.
+            I am passionate about continuous learning and improving my development skills step by step.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript (Basic)</div>
+            <div class="card">PHP (Basic)</div>
+            <div class="card">Python (Basic)</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+
+            <a href="https://github.com/Isha-duwal/game/tree/main" target="_blank">
+                <div class="card">
+                    <h3>Scissor Paper Game</h3>
+                    <p>Developed using Python demonstrating logic building and user interaction.</p>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/Isha-duwal/Facebook_page" target="_blank">
+                <div class="card">
+                    <h3>Facebook Landing Page</h3>
+                    <p>Created a replica landing page using HTML and CSS focusing on layout and design.</p>
+                    <span class="arrow">→</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor of Computer Application (BCA) - Running</p>
+        <p>Hetauda School of Management and Social Sciences</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <div class="grid">
+            <div class="card">Share Market</div>
+            <div class="card">Drawing</div>
+            <div class="card">Dancing</div>
+            <div class="card">Traveling</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:duwalisha070126@gmail.com">duwalisha070126@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Isha-duwal" target="_blank">github.com/Isha-duwal</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/isha-duwal-90baaa330/"
+                target="_blank">linkedin.com/in/isha-duwal</a></p>
+
+        <input placeholder="Your Name">
+        <input placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btns">Send Message</button>
+    </section>
+
+    <footer>
+        <p>© 2026 Isha Duwal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>
